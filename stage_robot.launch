@@ -1,0 +1,24 @@
+<launch>
+
+<param name="use_sim_time"  value="true" />
+
+
+
+
+<arg name="map_file" default="$(find ex03)../../bags/lower3map.yaml"/>
+
+<node pkg="map_server" type="map_server" name="ex3_map_server" args="$(arg map_file)" output="screen">
+</node>
+
+
+
+
+<arg name="world_file" default="$(find ex03)../../lg_map.world"/>
+
+<node pkg="stage_ros" type="stageros" name="ex3_stage" args="$(arg world_file)" output="screen">
+</node>
+
+
+
+
+</launch>

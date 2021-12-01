@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="ex03" type="ParticleF" name="ex3_particlef" args="" output="screen">
+    </node>
+
+    <node pkg="ex03" type="PathFinder" name="ex3_pathfinder" args="" output="screen">
+    </node>
+</launch>

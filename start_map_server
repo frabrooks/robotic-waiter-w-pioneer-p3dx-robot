@@ -1,0 +1,2 @@
+echo "starting map server..."
+rosrun map_server map_server bags/lower3map.yaml

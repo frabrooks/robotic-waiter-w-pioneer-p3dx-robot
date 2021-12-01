@@ -1,0 +1,6 @@
+*.swp
+devel/
+build/
+*.yaml
+*.bag
+*.class

@@ -1,0 +1,19 @@
+# any terminal
+// ros core
+roscore
+// visualisation
+rosrun rviz rviz
+// lasers (req. robot)
+roslaunch socspioneer p2os_laser.launch
+
+# inside ~/Robotics
+// map server
+./start_map_server
+// compile code
+catkin_make
+// various programs
+rosrun ex02 ParticleF   // main filter
+rosrun ex02 Wallhugger3 // runs at walls
+rosrun ex01 Wallhugger2 // follows the wall
+
+
